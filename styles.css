@@ -29,17 +29,14 @@ html, body {
 
 @font-face {
     font-family: "custom-font";
-    src: url("custom-font.woff2") format("woff2"),
-         url("custom-font.woff") format("woff"),
-         url("custom-font.ttf") format("truetype");
+    src: url("custom-font.woff") format("woff");
 }
 
 @font-face {
     font-family: "custom-font2";
-    src: url("custom-font2.woff2") format("woff2"),
-         url("custom-font2.woff") format("woff"),
-         url("custom-font2.ttf") format("truetype");
+    src: url("custom-font2.woff") format("woff");
 }
+
 h1 {
     padding: 20px;
     font-family: "custom-font";
