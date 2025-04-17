@@ -1,3 +1,4 @@
-body {
-    background-color: rgb(214, 183, 238);
+#grad {
+    background-image: linear-gradient(to bottom right, rgb(84, 254, 11), rgb(220, 227, 212));
+    padding: 20px;
 }
