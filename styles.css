@@ -1,4 +1,104 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(to bottom right, rgb(84, 254, 11) 30%, rgb(220, 227, 212) 70%); 
+    background-size: cover;
+    overflow: hidden;
+}
+.shift-left {
+    display: inline-block;
+    margin-left: -10px;
+    margin-top: -20px;
+}
+
 #grad {
-    background-image: linear-gradient(to bottom right, rgb(84, 254, 11), rgb(220, 227, 212));
+    background-image: inherit;     
+}
+
+#Chikawa {
+    position: fixed; 
+    left: 60%; 
+    top: 50%; 
+    transform: translate(-40%, -32%); 
+    width: 300px;
+    height: 300px;
+    z-index: 5; 
+}
+
+
+@font-face {
+    font-family: "custom-font";
+    src: url("custom-font.woff") format("woff");
+}
+
+@font-face {
+    font-family: "custom-font2";
+    src: url("custom-font2.woff") format("woff");
+}
+
+h1 {
     padding: 20px;
+    font-family: "custom-font";
+    font-size: 300px;
+    line-height: 0.9;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+p{
+    font-family:"custom-font2";
+    color: black;
+    all
+    padding: 50px;
+    margin-left: 20px;
+    font-size: 46px;
+    line-height: .05em
+}
+
+p a {
+    font-family: "custom-font2";
+    color:black;
+    text-decoration: none; 
+}
+
+p a:hover {
+    color: #ff338b;
+    text-decoration: none;
+}
+
+.flying-object {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    animation: bounce 15s linear infinite;
+    z-index: 10;
+}
+
+.flying-object img {
+    width: 150%;
+    height: auto;
+    transform: rotate(10deg);
+}
+
+@keyframes bounce {
+    0% {
+        top: 10%;
+        left: 10%;
+    }
+    25% {
+        top: 10%;
+        left: 90%;
+    }
+    50% {
+        top: 90%;
+        left: 90%;
+    }
+    75% {
+        top: 90%;
+        left: 10%;
+    }
+    100% {
+        top: 10%;
+        left: 10%;
+    }
 }
