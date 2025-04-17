@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    margin-left: 48px;
+    margin-right: 48px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #D50E36 0%, #2A0A15 30%, #1A1A1A 60%);
+    font-family: 'custom-font3', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "custom-font3";
+    src: url("fonts/custom-font3.woff") format("woff");
+}
+h1 {
+    font-size: 350px;
+    color: #B49FCC;
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 52%;
+    transform: translate(-60%, 5%);
+    z-index: 1; 
+    font-kerning: auto;
+}
+.R{
+    top: 55%;
+    left: 39%;
+    z-index: 3;
+}
+.P{
+    top: 55%;
+    left: 48.78%;
+    z-index: 3;
+}
+.shape-container {
+    position: relative;
+    width: 60vw;
+    height: 60vw;
+    max-width: 600px;
+    max-height: 600px;
+    z-index: 2; 
+}
+
+.shape {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  
+}
+.shape:hover {
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.heart {
+    background-image: url('Heart.png');
+    top: 10%;
+    right: 50%;
+    transform: rotate(-2deg);
+    z-index: 3; 
+    width: 500px;
+    height: 500px;
+    max-width: 800px;
+    max-height: 800px;
+    background-size: contain;
+    position: absolute; 
+}
+
+.flower {
+    background-image: url('Flower.png');
+    top: -6%;
+    right: -15%;
+    transform: rotate(22deg);
+    z-index: 1; 
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.star {
+    background-image: url('Star.png');
+    bottom: 10%;
+    left: 120%;
+    transform: rotate(25deg);
+    z-index: 1; 
+    max-width: 300px;
+    max-height: 300px;
+}
