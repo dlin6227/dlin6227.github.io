@@ -49,11 +49,10 @@ h1 {
 p{
     font-family:"custom-font2";
     color: black;
-    all
     padding: 50px;
     margin-left: 20px;
     font-size: 46px;
-    line-height: .05em
+    line-height: .05em;
 }
 
 p a {
