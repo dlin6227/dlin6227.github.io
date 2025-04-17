@@ -1,7 +1,5 @@
 body {
     margin: 0;
-    margin-left: 48px;
-    margin-right: 48px;
     height: 100vh;
     background: linear-gradient(to bottom, #D50E36 0%, #2A0A15 30%, #1A1A1A 60%);
     font-family: 'custom-font3', sans-serif;
@@ -28,6 +26,7 @@ h3{
     transform: rotate(338deg);
     position: relative; 
     top: -30px;  
+    font-weight: normal;
 }
 h1 {
     font-size: 350px;
@@ -39,16 +38,17 @@ h1 {
     transform: translate(-60%, 5%);
     z-index: 1; 
     font-kerning: auto;
+    font-weight: normal;
 }
 .R{
     top: 55%;
     left: 39%;
-    z-index: 3;
+    z-index: 4;
 }
 .P{
     top: 55%;
     left: 48.78%;
-    z-index: 3;
+    z-index: 4;
 }
 .shape-container {
     position: relative;
@@ -68,6 +68,7 @@ h1 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+    
   
 }
 .shape:hover {
