@@ -15,6 +15,20 @@ body {
     font-family: "custom-font3";
     src: url("fonts/custom-font3.woff") format("woff");
 }
+
+@font-face {
+    font-family: "custom-font4";
+    src: url("fonts/custom-font2.woff") format("woff");
+}
+h3{
+    font-family: "custom-font3";
+    font-size: 110px;
+    color: #B49FCC;
+    z-index: 1;
+    transform: rotate(338deg);
+    position: relative; 
+    top: -30px;  
+}
 h1 {
     font-size: 350px;
     color: #B49FCC;
@@ -96,9 +110,56 @@ h1 {
 .star {
     background-image: url('Star.png');
     bottom: 10%;
-    left: 120%;
+    left: 144%;
     transform: rotate(25deg);
     z-index: 1; 
     max-width: 300px;
     max-height: 300px;
+}
+
+.flying-object {
+    position: absolute;
+    width: 150px;
+    transform: rotate(125deg);
+    height: auto;
+    animation: bounce 15s linear infinite;
+    z-index: 10;
+}
+
+.flying-object img {
+    width: 100%;
+    height: auto;
+    transform: rotate(10deg);
+}
+
+@keyframes bounce {
+    0% {
+        top: 10%;
+        left: 10%;
+    }
+    25% {
+        top: 10%;
+        left: 90%;
+    }
+    50% {
+        top: 90%;
+        left: 90%;
+    }
+    75% {
+        top: 90%;
+        left: 10%;
+    }
+    100% {
+        top: 10%;
+        left: 10%;
+    }
+}
+
+@keyframes spin-flying {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
