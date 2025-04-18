@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    background-image: linear-gradient(to bottom right, rgb(84, 254, 11) 30%, rgb(220, 227, 212) 70%); 
+    background-image: linear-gradient(to bottom right, rgb(76, 234, 37) 30%, rgb(220, 227, 212) 70%); 
     background-size: cover;
     overflow: hidden;
 }
@@ -11,6 +11,11 @@ html, body {
     margin-top: -20px;
 }
 
+.links {
+    display: block;
+    background-color: rgb(226, 232, 236);
+    padding: .025px;
+}
 
 #grad {
     background-image: inherit;     
