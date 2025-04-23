@@ -147,7 +147,7 @@ h1 {
     background-image: url('Star.png');
     position: absolute;
     bottom: 10%;
-    left: 149%;
+    left: 148%;
     transform: rotate(25deg);
     z-index: 1; 
     max-width: 300px;
