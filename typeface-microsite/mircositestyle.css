@@ -8,6 +8,41 @@ body {
     align-items: center;
     overflow: hidden;
 }
+.stripe {
+    font-family: "custom-font4";
+    display: flex;
+    align-items: center;  
+    background-color: #1A1A1A;
+    color: #B49FCC;
+    height: 35px;
+    width: 100%;                 
+    margin: 0;
+    position: absolute;
+    top: 0;  
+    overflow: hidden;  
+}
+
+.stripe span {
+    display: inline-block;  
+    white-space: nowrap; 
+}
+
+.stripe .content {
+    display: flex; 
+    animation: scrollText 40s linear infinite;  
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);  
+    }
+    100% {
+        transform: translateX(-100%);  
+    }
+}
+
+
+
 
 @font-face {
     font-family: "custom-font3";
@@ -16,7 +51,7 @@ body {
 
 @font-face {
     font-family: "custom-font4";
-    src: url("fonts/custom-font2.woff") format("woff");
+    src: url("fonts/PPNeueMontreal-Regular.woff2") format("woff");
 }
 h3{
     font-family: "custom-font3";
@@ -100,7 +135,7 @@ h1 {
 
 .flower {
     background-image: url('Flower.png');
-    top: -6%;
+    top: -5%;
     right: -15%;
     transform: rotate(22deg);
     z-index: 1; 
@@ -110,6 +145,7 @@ h1 {
 
 .star {
     background-image: url('Star.png');
+    position: absolute;
     bottom: 10%;
     left: 144%;
     transform: rotate(25deg);
@@ -164,3 +200,60 @@ h1 {
         transform: rotate(360deg);
     }
 }
+.green-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #D50E36;
+    color: #B49FCC;
+    font-size: 17px;
+    font-family: 'custom-font4', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    position: absolute;
+    transform: rotate(15deg);
+    bottom: 30px;
+    right: 25px;
+    z-index: 10;
+}
+
+
+.green-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transition-delay: 0.1s; 
+}
+
+.green-button:active {
+    transform: scale(1); 
+}
+
+.splitt-word {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.1em; 
+    position: relative; 
+    transition: letter-spacing 0.3s ease-in-out; 
+}
+
+.splitt-word span {
+    display: inline-block;
+}
+
+
+.splitt-word:hover {
+    letter-spacing: 0.2em;
+}
+
+
+
+
+
+
+
+
+
+  
+
