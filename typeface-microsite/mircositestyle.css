@@ -227,7 +227,7 @@ h1 {
 }
 
 .green-button:active {
-    transform: scale(1); 
+    transform: scale(2); 
 }
 
 .splitt-word {
@@ -235,7 +235,7 @@ h1 {
     justify-content: center;
     letter-spacing: 0.1em; 
     position: relative; 
-    transition: letter-spacing 0.3s ease-in-out; 
+    transition: letter-spacing 1s ease-in-out; 
 }
 
 .splitt-word span {
